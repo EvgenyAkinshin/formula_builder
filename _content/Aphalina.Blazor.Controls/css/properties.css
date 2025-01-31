@@ -1,0 +1,192 @@
+:root {
+    --base-9: #21232A;
+    --base-8: #313645;
+    --base-7: #404453;
+    --base-6: #595F71;
+    --base-5: #727684;
+    --base-4: #9196A7;
+    --base-3: #D6D7DE;
+    --base-2: #E5E5E5;
+    --base-1: #F5F5F5;
+    --base-0: #FBFBFB;
+
+    --primary-0: #F5EAEC;
+    --primary-1: #FFCDD6;
+    --primary-2: #FFB1BF;
+    --primary-3: #FF7E96;
+    --primary-4: #EA4B68;
+    --primary-5: #EA005A;
+    --primary-6: #C8004D;
+    --primary-7: #A4003F;
+    --primary-8: #76002E;
+    --primary-9: #5B0023;
+
+    --red-0: #fef2f2;
+    --red-1: #fee2e2;
+    --red-2: #fecaca;
+    --red-3: #fca5a5;
+    --red-4: #f87171;
+    --red-5: #ef4444;
+    --red-6: #dc2626;
+    --red-7: #b91c1c;
+    --red-8: #991b1b;
+    --red-9: #7f1d1d;
+
+    --green-0: #f0fdf4;
+    --green-1: #dcfce7;
+    --green-2: #bbf7d0;
+    --green-3: #86efac;
+    --green-4: #4ade80;
+    --green-5: #22c55e;
+    --green-6: #16a34a;
+    --green-7: #15803d;
+    --green-8: #166534;
+    --green-9: #14532d;
+
+    --blue-0: #eff6ff;
+    --blue-1: #dbeafe;
+    --blue-2: #bfdbfe;
+    --blue-3: #93c5fd;
+    --blue-4: #60a5fa;
+    --blue-5: #3b82f6;
+    --blue-6: #2563eb;
+    --blue-7: #1d4ed8;
+    --blue-8: #1e40af;
+    --blue-9: #1e3a8a;
+
+    --shadow-color: 220 3% 15%;
+    --shadow-strength: 1%;
+    --shadow-1: 0 1px 2px -1px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+    --shadow-2:
+        0 3px 5px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+        0 7px 14px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%));
+    --shadow-3:
+        0 -1px 3px 0 hsl(var(--shadow-color) / calc(var(--shadow-strength) + 2%)),
+        0 1px 2px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 2%)),
+        0 2px 5px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 4%)),
+        0 4px 12px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%)),
+        0 12px 15px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 7%));
+    --shadow-4:
+        0 -2px 5px 0 hsl(var(--shadow-color) / calc(var(--shadow-strength) + 2%)),
+        0 1px 1px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+        0 2px 2px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+        0 5px 5px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 4%)),
+        0 9px 9px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%)),
+        0 16px 16px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 6%));
+    --shadow-5:
+        0 -1px 2px 0 hsl(var(--shadow-color) / calc(var(--shadow-strength) + 2%)),
+        0 2px 1px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+        0 5px 5px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+        0 10px 10px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 4%)),
+        0 20px 20px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%)),
+        0 40px 40px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 7%));
+    --shadow-6:
+        0 -1px 2px 0 hsl(var(--shadow-color) / calc(var(--shadow-strength) + 2%)),
+        0 3px 2px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+        0 7px 5px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+        0 12px 10px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 4%)),
+        0 22px 18px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%)),
+        0 41px 33px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 6%)),
+        0 100px 80px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 7%));
+    --inner-shadow-0: inset 0 0 0 1px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+    --inner-shadow-1: inset 0 1px 2px 0 hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+    --inner-shadow-2: inset 0 1px 4px 0 hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+    --inner-shadow-3: inset 0 2px 8px 0 hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+    --inner-shadow-4: inset 0 2px 14px 0 hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+
+    --font-weight-1: 100;
+    --font-weight-2: 200;
+    --font-weight-3: 300;
+    --font-weight-4: 400;
+    --font-weight-5: 500;
+    --font-weight-6: 600;
+    --font-weight-7: 700;
+    --font-weight-8: 800;
+    --font-weight-9: 900;
+    --font-lineheight-00: .95;
+    --font-lineheight-0: 1.1;
+    --font-lineheight-1: 1.25;
+    --font-lineheight-2: 1.375;
+    --font-lineheight-3: 1.5;
+    --font-lineheight-4: 1.75;
+    --font-lineheight-5: 2;
+    --font-letterspacing-0: -.05em;
+    --font-letterspacing-1: .025em;
+    --font-letterspacing-2: .050em;
+    --font-letterspacing-3: .075em;
+    --font-letterspacing-4: .150em;
+    --font-letterspacing-5: .500em;
+    --font-letterspacing-6: .750em;
+    --font-letterspacing-7: 1em;
+
+    --font-size-00: .5rem;
+    --font-size-0: .75rem;
+    --font-size-1 : 0.875rem;
+    --font-size-2: 1rem;
+    --font-size-3: 1.1rem;
+    --font-size-4: 1.25rem;
+    --font-size-5: 1.5rem;
+    --font-size-6: 2rem;
+    --font-size-7: 2.5rem;
+    --font-size-8: 3rem;
+    --font-size-9: 3.5rem;
+
+  --radius-1: 3px;
+  --radius-2: 5px;
+  --radius-3: 1rem;
+  --radius-4: 2rem;
+  --radius-5: 4rem;
+  --radius-6: 8rem;
+  --radius-round: 1e5px;
+
+  --font: 'Inter var', sans-serif;
+
+    /* --font-size-fluid-0: clamp(.75rem, 2vw, 1rem);
+    --font-size-fluid-1: clamp(1rem, 4vw, 1.5rem);
+    --font-size-fluid-2: clamp(1.5rem, 6vw, 2.5rem);
+    --font-size-fluid-3: clamp(2rem, 9vw, 3.5rem); */
+
+}
+
+[data-theme=blue] {
+  --primary-0 : #f0f9ff;
+  --primary-1 : #e0f2fe;
+  --primary-2 : #bae6fd;
+  --primary-3 : #7dd3fc;
+  --primary-4 : #38bdf8;
+  --primary-5 : #0ea5e9;
+  --primary-6 : #0284c7;
+  --primary-7 : #0369a1;
+  --primary-8 : #075985;
+  --primary-9 : #0c4a6e;
+}
+
+[data-theme=ebony] {
+
+  --primary-0 : #f5f7fa; 
+  --primary-1 : #ebeef3; 
+  --primary-2 : #d2dae5; 
+  --primary-3 : #aab8cf; 
+  --primary-4 : #7c93b4; 
+  --primary-5 : #5b759c; 
+  --primary-6 : #475d82; 
+  --primary-7 : #3b4c69; 
+  --primary-8 : #334159; 
+  --primary-9 : #252d3c;
+}
+
+[data-theme=sienna]  {
+  --primary-0 : #fdf4ef; 
+  --primary-1 : #fbe5d9; 
+  --primary-2 : #f7c7b1; 
+  --primary-3 : #f1a180; 
+  --primary-4 : #ea704b; 
+  --primary-5 : #e54e2a; 
+  --primary-6 : #d63620; 
+  --primary-7 : #b2271c; 
+  --primary-8 : #8e221e; 
+  --primary-9 : #731f1b;
+}
+
+
+

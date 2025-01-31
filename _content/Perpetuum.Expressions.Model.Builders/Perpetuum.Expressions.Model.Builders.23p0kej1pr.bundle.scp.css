@@ -1,0 +1,75 @@
+/* _content/Perpetuum.Expressions.Model.Builders/Component1.razor.rz.scp.css */
+.my-component[b-vk8692wl8j] {
+    border: 2px dashed red;
+    padding: 1em;
+    margin: 1em 0;
+    background-image: url('background.png');
+}
+/* _content/Perpetuum.Expressions.Model.Builders/ExpressionModelEditor.razor.rz.scp.css */
+.text-element[b-fvh4xadznb]
+{
+  font-size: 30px;
+  color: dimgrey;
+  margin: 2px;
+}
+
+/*.exp-container {
+  container-name: panel-container;
+  container-type: inline-size;
+}*/
+
+.exp-panel[b-fvh4xadznb] {
+  margin: 4px;
+  padding: 4px;
+  border: 1px solid green;
+  display: flex;
+  /*  flex-direction: column;
+  align-items: flex-start;*/
+  flex-direction: row;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.right-arrow[b-fvh4xadznb] {
+  color: green;
+  display: inline;
+}
+
+.bottom-arrow[b-fvh4xadznb] {
+  color: green;
+  display: none;
+}
+
+.vert .exp-panel[b-fvh4xadznb] {
+  flex-direction: column;
+  align-items: center;
+}
+
+.vert .right-arrow[b-fvh4xadznb]
+{
+  display: none;
+}
+
+.vert .bottom-arrow[b-fvh4xadznb] {
+  display: inline;
+}
+
+.exp-panel-1[b-fvh4xadznb] {
+  margin: 4px;
+  padding: 4px;
+  border: 1px solid green;
+  display: flex;
+    flex-direction: column;
+  align-items: flex-start;
+/*  flex-direction: row;
+  align-items: center;*/
+  border-radius: 4px;
+}
+
+@container panel-container (width > 800px) {
+  /* Change the flex direction of the .child element. */
+/*  .exp-panel {
+    flex-direction: column;
+    align-items: flex-start;
+  }*/
+}

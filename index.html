@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />-->
+  <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+
+  <title>Конструктор формул</title>
+  <base href="/" />
+  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/app.css" rel="stylesheet" />
+  <link href="css/font-styles.css" rel="stylesheet">
+  <!--<link href="css/tailwind.css" rel="stylesheet">-->
+  <!--<link href="css/custom.css" rel="stylesheet">-->
+
+  <link href="_content/Aphalina.Blazor.Controls/css/style.css" rel="stylesheet" />
+  <link href="_content/Aphalina.Blazor.Controls/css/app.css" rel="stylesheet" />
+
+  <link href="ExpressionsBuilder.styles.css" rel="stylesheet" />
+  <script src="_content/Microsoft.FluentUI.AspNetCore.Components/Microsoft.FluentUI.AspNetCore.Components.lib.module.js" type="module" async></script>
+
+  
+
+  <style>
+    .icon::before {
+      font-size: 30px;
+    }
+
+    .icon-medium::before {
+      font-size: 24px;
+    }
+
+    .icon-small::before {
+      font-size: 16px;
+    }
+
+
+    .lds-ellipsis {
+      display: inline-block;
+      position: relative;
+      width: 80px;
+      height: 80px;
+    }
+
+      .lds-ellipsis div {
+        position: absolute;
+        top: 33px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: lightblue;
+        animation-timing-function: cubic-bezier(0, 1, 1, 0);
+      }
+
+        .lds-ellipsis div:nth-child(1) {
+          left: 8px;
+          animation: lds-ellipsis1 0.6s infinite;
+        }
+
+        .lds-ellipsis div:nth-child(2) {
+          left: 8px;
+          animation: lds-ellipsis2 0.6s infinite;
+        }
+
+        .lds-ellipsis div:nth-child(3) {
+          left: 32px;
+          animation: lds-ellipsis2 0.6s infinite;
+        }
+
+        .lds-ellipsis div:nth-child(4) {
+          left: 56px;
+          animation: lds-ellipsis3 0.6s infinite;
+        }
+
+    @keyframes lds-ellipsis1 {
+      0% {
+        transform: scale(0);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes lds-ellipsis3 {
+      0% {
+        transform: scale(1);
+      }
+
+      100% {
+        transform: scale(0);
+      }
+    }
+
+    @keyframes lds-ellipsis2 {
+      0% {
+        transform: translate(0, 0);
+      }
+
+      100% {
+        transform: translate(24px, 0);
+      }
+    }
+  </style>
+</head>
+
+<body style="-webkit-touch-callout: none; touch-action: none;">
+  <div id="app">
+    <div style="position: absolute; left: 0px; right:0px; top:0px; bottom: 0px; display:flex; flex-direction: column; justify-content: center; align-items: center;">
+
+      <h1> Конструктор формул </h1>
+      
+      <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+      <div>загрузка...</div>
+    </div>
+  </div>
+
+  <div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a href="" class="reload">Reload</a>
+    <a class="dismiss">🗙</a>
+  </div>
+  <script src="_framework/blazor.webassembly.js"></script>
+  <!--<script src="_content/Aphalina.Drawing.Blazor/jsUtils.js"></script>-->
+  <script src="_content/Aphalina.Blazor.Controls/aphalinacontrols.js"></script>
+</body>
+
+</html>

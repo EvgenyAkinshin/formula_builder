@@ -1,0 +1,25 @@
+﻿.navigation-frame {
+  overflow: hidden;
+  position: relative;
+}
+
+.navigation-frame-container {
+  background-color: white;
+  transition: opacity, transform;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+}
+
+  .navigation-frame-container.before-nav {
+    opacity: 0;
+    transform: translate(0, 50px);
+  }
+
+  .navigation-frame-container.current {
+    opacity: 1;
+  }
+
+  .navigation-frame-container.in-stack {
+    opacity: 0;
+    transform: translate(0, -50px);
+  }
